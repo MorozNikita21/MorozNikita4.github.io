@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+  <head>
+    <!-- Bootstrap -->
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Гиперссылки и форма</title>
+  </head>
+
+  <body>
+      <header>
+        <div class="container-fluid p-2">
+            <div class="row row-cols-auto justify-content-between justify-content-md-center align-items-center">
+                <div class="col ms-2">
+							<img id = "photo" src="MyDd.jpg" width="125" height="125" alt="">
+							<h1 id = "txt1">Гиперссылки и форма</h1>
+						</div>
+            </div>
+        </div>
+    </header>
+<main>
+        <section class="container-md pt-3 pe-0 ps-0 p-md-3 d-flex flex-column">
+            <nav class="grey-div container-fluid">
+                <div class="col-8 d-md-flex justify-content-md-around col-md-auto">
+                    <a href="#refs" class="col-md-3">
+                        <div class="nav-ref p-3 m-2 text-center">
+                            Ссылки
+                        </div>
+                    </a>
+                    <a href="#table" class="col-md-3">
+                        <div class="nav-ref p-3 m-2 text-center">
+                            Таблица
+                        </div>
+                    </a>
+                    <a href="#form" class="col-md-3">
+                        <div class="nav-ref p-3 m-2 text-center">
+                            Анкета
+                        </div>
+                    </a>
+                </div>
+            </nav>
+            <div id="refs" class="grey-div mt-3">
+      <map name = "figuri" >
+			<area shape = "rect" coords = "25,25,125,125" href = "info1.html" alt = "квадрат" >
+			<area shape = "circle" coords = "250,75,50" href = "info2.html" alt = "круг." >
+		</map>
+      
+    
+    
+    <ol class="list" id ="list">
+      <li><a href="example.com">Aбсолютная гиперссылка</a></li>
+      <li><a href="https://example.com">Aбсолютная гиперссылка в протоколе</a></li>
+      <li><a href="ftp://example.com/file.txt">Cсылка на файл на сервере FTP без авторизации</a></li>
+      <li><a href="ftp://user:pass@example.com/file.txt">Cсылка на файл на сервере FTP с авторизацией</a></li>
+      <li><a href="https://ru.wikipedia.org/wiki/FTP?#footer-info-copyright">Ссылка на фрагмент страницы некоторого сайта</a></li>
+      <li><a href="info.html#back">Ссылка на фрагмент текущей страницы</a></li>
+      <li><a href="https://example.com/URL?a&b">Ссылка с двумя параметрами в URL</a></li>
+      <li><a href="#one" title="Первая ссылка">Первая с title </a><a href="#two" title="Вторая ссылка">Вторая с title </a> <a href="#three" title="Третья ссылка">Третья с title</a></li>
+      <li><a>Ссылка без href</a></li>
+      <li><a href="">Ссылка с пустым href</a></li>
+      <li><a href="https://example.com" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+      <!--noindex--><li><a href="https://example.com">Ссылка, запрещенная для индексации поисковиками</a></li><!--/noindex-->
+      <li><p>Не знаю <a href="https://example.com">Ссылка контекстная в тексте абзаца</a> что писать</p></li>
+      <li><a href="https://example.com"><img src="Ya.jpg" alt=""></a>
+      <br>Ссылка-изображение</li>
+      <li><img src="Ya.jpg" usemap="#figuri" alt="">
+      <br>Ссылки из прямоугольных и круглых областей картинки</li>
+      <li><a href="info.html">Относительная на страницу в текущем каталоге</a></li>
+      <li><a href="./about/info.html"> Относительная на страницу в каталоге about</a></li>
+      <li><a href="./">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+      <li><a href="../">Относительная на страницу в каталоге двумя уровнями выше</a></li>
+      <li><a href="/">Сокращенная на главную</a></li>
+      <li><a href="/asd">Сокращенная ссылку на внутреннюю</a></li>
+    </ol>
+      
+    
+    <div id="tabshape">
+    <table id="table">
+      <tr>
+        <th>Вариант1</th>
+        <th>Вариант2</th>
+        <th>Вариант3</th>
+      </tr>
+      <tr>
+          <td colspan="3">Ответы на задания 1-4</td>
+      </tr>
+      <tr>
+        <td>Z</td>
+        <td>X</td>
+        <td>C</td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td>X</td>
+        <td>Z</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>-14</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>aFD</td>
+        <td>GGdD</td>
+        <td>bDBd</td>
+      </tr>
+    </table>
+      
+
+    <form id ="form" action="/"
+      method="POST">
+    <h2 id = "Forma">Форма HTML</h2>
+
+      <label>
+        Введите имя:<br />
+        <input name="field-name-1" />
+      </label><br />
+
+      <label>
+        Введите ваш email:<br />
+        <input name="field-email"
+          type="email" />
+      </label><br />
+
+      <label>
+        Введите вашу дату рождения:<br />
+        <input name="field-date"
+          type="date" />
+      </label><br />
+        
+        Пол:<br />
+      <label><input type="radio"
+        name="radio-group-1" value="Значение1" />
+        Мужской</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение2" />
+        Женский</label><br />
+        
+        Количество конечностей:<br />
+      <label><input type="radio" 
+        name="radio-group-2" value="Значение1" />
+        0</label>
+      <label><input type="radio"
+        name="radio-group-2" value="Значение2" />
+        1</label>
+      <label><input type="radio"
+        name="radio-group-2" value="Значение3" />
+        2</label>
+      <label><input type="radio"
+        name="radio-group-2" value="Значение4" />
+        3</label>
+       <label><input type="radio"
+        name="radio-group-2" value="Значение5" />
+        4</label><br />
+        
+        <label>
+        Сверхспособности:<br />
+        <select name="field-name-2">
+          <option value="Значение1">Бессмертие</option>
+          <option value="Значение2">Прохождение сквозь стены</option>
+          <option value="Значение3">Левитация</option>
+        </select>
+      </label><br />
+
+
+
+      <label>
+        Ваша биография:<br />
+        <textarea name="field-name-3"></textarea>
+      </label><br />
+
+
+      <br />
+      <label> 
+          С контрактом ознакомлен(a)
+        <input type="checkbox" 
+        name="check-1" />
+          </label><br /> 
+
+     
+      <input type="submit" value="Отправить" />
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="p-1">
+        <h3 class="copyrate">(с)Мороз Никита 2022</h3>
+    </footer>
+
+</body>
+
+</html>
